@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ng-book 2: Simple Reddit-like App
 
 > A simple voting app that resembles a minimal-reddit link voting app in Angular 2.
@@ -41,3 +42,7 @@ If that doesn't work, [come chat with us](https://gitter.im/ng-book/ng-book)!
 - `tslint.json` - `tslint` is a program and helps enforce rules about code style. The `tslint.json` is the config file that specifies conventions for this project.
 - `vendor` - for this project we're using [Semantic-UI](http://semantic-ui.com/) for the CSS. We've included the CSS files from Semantic here.
 - `resources` - this is where we store a few images
+=======
+# angular2-simple_reddit-webApp
+:octocat: Cover most of the essentials of Angular 2 using  TypeScript 
+>>>>>>> 27a6fc8e156ac587e4b94a8270d8fac92e5da497
