@@ -3,7 +3,7 @@
 
 
 </p>
-# Normalization Exercises
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![Build Status](https://travis-ci.org/anfederico/Clairvoyant.svg?branch=master)
