@@ -1,28 +1,33 @@
 /**
-* A basic hello-world Angular 2 app
-*/
-import{
-  NgModule,
-  component
+ * A basic hello-world Angular 2 app
+ */
+import {
+    NgModule,
+    Component
 } from '@angular/core';
-import{BrowserModule} from '@angular/platform-browser';
-import{platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {
+    BrowserModule
+} from '@angular/platform-browser';
+import {
+    platformBrowserDynamic
+} from '@angular/platform-browser-dynamic';
 
 @Component({
     selector: 'hello-world',
     template: `
+
  <div>
+ Ahmad 
  Hello world
  </div>
  `
 })
-class HelloWorld {
-}
+class HelloWorld {}
 @NgModule({
     declarations: [HelloWorld],
     imports: [BrowserModule],
     bootstrap: [HelloWorld],
 })
-class HelloWorldAppModule { }
+class HelloWorldAppModule {}
 
 platformBrowserDynamic().bootstrapModule(HelloWorldAppModule);
