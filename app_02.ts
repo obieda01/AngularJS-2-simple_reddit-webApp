@@ -12,6 +12,34 @@ import {
 import {
     platformBrowserDynamic
 } from '@angular/platform-browser-dynamic';
+@Component({
+    selector: 'reddit',
+    template: `
+<form class="ui  form segment">
+     <h3 class="ui blue  ribbon label"><i Add></i>Add a Link</h3>
+     <div class="field">
+         <label for="title">Title:</label>
+         <input name="title" #titleValue>
+     </div>
+     <div class="field">
+         <label for="link">Link:</label>
+         <input name="link" #linkValue>
+     </div>
+
+     <button (click)="addArticle(titleValue,linkValue)"
+     class="ui  black right floated  button" >
+     <i class="github icon"></i>Submit Link</button>
+
+</form>
+ `
+})
+class RedditApp {
+    addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
+        console.log(`Adding title:${title.value} and link:${link.value}`);
+        return false;
+    }
+}
+
 
 @Component({
     selector: 'reddit-article',
@@ -69,41 +97,8 @@ class ArticleComponent {
     }
 }
 
-@Component({
-    selector: 'reddit',
-    template: `
-<form class="ui  form segment">
-     <h3 class="ui blue  ribbon label"><i Add></i>Add a Link</h3>
-     <div class="field">
-         <label for="title">Title:</label>
-         <input name="title" #titleValue>
-     </div>
-     <div class="field">
-         <label for="link">Link:</label>
-         <input name="link" #linkValue>
-     </div>
-
-     <button (click)="addArticle(titleValue,linkValue)"
-     class="ui  black right floated  button" >
-     <i class="github icon"></i>Submit Link</button>
-
-</form>
-    <div class="ui grid posts">
-      <reddit-article>
-      </reddit-article>
-    </div>
- `
-})
-class RedditApp {
-    addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
-        console.log(`Adding title:${title.value} and link:${link.value}`);
-        return false;
-    }
-}
-
-
 @NgModule({
-    declarations: [RedditApp,ArticleComponent],
+    declarations: [RedditApp],
     imports: [BrowserModule],
     bootstrap: [RedditApp],
 })
