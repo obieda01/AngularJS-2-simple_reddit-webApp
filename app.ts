@@ -55,17 +55,20 @@ class ArticleComponent {
     link: string;
 
     constructor() {
-        this.title = 'Angular 2';
-        this.link = 'http://angular.io';
+        this.title = 'Ahmad app';
+        this.link = 'https://github.com/obieda01/angular2-simple_reddit-webApp';
         this.votes = 10;
     }
 
     voteUp() {
         this.votes += 1;
+        return  false;
     }
 
     voteDown() {
         this.votes -= 1;
+        return  false;
+        
     }
 }
 
